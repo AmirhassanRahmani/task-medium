@@ -1,38 +1,29 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "IranSans";
+  src: url("./fonts/FontsFree-Net-ir_sans.ttf") format("truetype");
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: "IranSans", sans-serif;
+}
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.swiper-slide {
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.swiper-button-prev::after {
+  display: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.swiper-button-next::after {
+  display: none;
 }
